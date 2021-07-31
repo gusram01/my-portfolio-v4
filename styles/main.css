@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "cadmanregular";
+  src: local("cadmanregular"),
+    url("~assets/fonts/Cadman_Roman-webfont.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cadmanregular";
+  src: local("cadmanregular"),
+    url("~assets/fonts/Cadman_Italic-webfont.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "cadmanregular";
+  src: local("cadmanregular"),
+    url("~assets/fonts/Cadman_Bold-webfont.woff") format("woff");
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Solid";
+  src: url("~assets/fonts/fa-solid-900.woff") format("woff");
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  src: url("~assets/fonts/fa-brands-400.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-primary: #003566;
+  --color-primary-rgb: 0, 53, 102;
+  --color-primary-darker: #001d3d;
+  --color-primary-darker-rgb: 0, 29, 61;
+
+  --color-secondary: #ffc300;
+  --color-secondary-rgb: 255, 195, 0;
+  --color-secondary-lighter: #ffd60a;
+  --color-secondary-lighter-rgb: 255, 214, 10;
+
+  --color-danger: #d90429;
+  --color-danger-rgb: 217, 4, 41;
+
+  --bg-color-dark: #01161e;
+  --bg-color-dark-rgb: 1, 22, 30;
+
+  --text-color-dark: #eff6e0;
+  --text-color-dark-rgb: 239, 246, 224;
+
+  --bg-color-light: #eff6e0;
+  --bg-color-light-rgb: 239, 246, 224;
+
+  --text-color-light: #01161e;
+  --text-color-light-rgb: 1, 22, 30;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: cadmanregular, -apple-system, BlinkMacSystemFont, Cantarell,
+    Droid Sans, Segoe UI, Roboto, Oxygen Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa::before {
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+}
+.mybrand::before {
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.about-icon::before {
+  content: "\f007";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+}
+.experience-icon::before {
+  content: "\f508";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+}
+.education-icon::before {
+  content: "\f501";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+}
+.contact-icon::before {
+  content: "\f674";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+}
+.times-icon::before {
+  content: "\f00d";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+}
+.tools-icon::before {
+  content: "\f7d9";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+}
+.projects-icon::before {
+  content: "\f1c9";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+}
+.moon-icon::before {
+  content: "\f186";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+  color: #799be4;
+}
+.sun-icon::before {
+  content: "\f185";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Solid";
+  color: #ffaa4f;
+}
+.twitter-icon::before {
+  content: "\f099";
+  font-weight: 400;
+  font-family: "Font Awesome 5 Brands";
+}
+.linkedin-icon::before {
+  content: "\f08c";
+  font-weight: 400;
+  font-family: "Font Awesome 5 Brands";
+}
+.github-icon::before {
+  content: "\f09b";
+  font-weight: 400;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.light-theme {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+.dark-theme {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
