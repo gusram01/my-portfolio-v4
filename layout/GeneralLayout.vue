@@ -19,7 +19,7 @@ export default Vue.extend({
   },
 
   computed: {
-    colorTheme() {
+    colorTheme(): string {
       return this.lightTheme ? "light-theme" : "dark-theme";
     }
   },
